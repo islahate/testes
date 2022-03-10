@@ -1,0 +1,105 @@
+
+   Nom et prénom : SAOUD Fadwa.
+    
+   2. Actuallement vous : En recherche active
+   
+   3. Vous voulez travailler en tant que :developpeur backend.
+   
+   4. combien d'année d'expérience avez-vous? 1 mois de stage.
+ 
+     Questions Générales
+     
+    1. C'est quoi:
+       1. Git? est un logiciel de gestion de version décentralisé. 
+       2. Sass? c'est un langage de programmation et qui contient les fonctionalités de css. 
+       3. Composer? est un logiciel de dépendances libre écrit en php. 
+       4. Object Pool Pattern (Design Patterns): Solution éprouvées à des problèmes récurrents de design ou de code.
+       
+     2. A quoi sert la commande `git diff`? affiche les modifications entre les commits.
+ 
+     Javascript
+  
+    1. C'est quoi `CORS`? controle l'accès au contenu des serveurs externes.
+    
+    2. C'est quoi la différence entre `==` et `===`:
+     '==' : pour la comparaison entre deux variables quel que soit le type.
+     '===' : pour la comparaison entre deux variables il vérifiera le type et comparera les deux valeurs.
+    
+    3. Qu'est ce que return `if ( \"0\" == \"true\" ): false.
+    
+    4. Qu'est ce que `this`? est utilisée pour accéder à la variable d'instance de classe.
+  
+    CSS
+    
+    1. Expliquez la différence entre le comportement de `inline` et `block`:
+    `inline`:Il peut avoir des marges et des paddings.
+    `block`:Il ignore les propriétés width et height.
+    
+    2. Est-il possible de créer un site web responsive sans media queries ? non
+
+ 
+    PHP
+  
+    "3. Que signifie\n",
+    "```\n",
+    "    <?php\n",
+    "        $array= [3, 8, -4, 0, 2, -9];\n",
+    "        foreach ($array as &$item):\n",
+    "            $item = ($item >= 0)? $item : pow($item, 2);\n",
+    "        endforeach;\n",
+    "        print_r($array);\n",
+    "```"
+    se programme il va afficher un tableau de valeur qui equal 0 ou plus à la puissance 2.
+ 
+    DATABASE
+
+       1. extraire le nombre d'employés par jour s'étant inscrit
+   rép1: select count(*) from employee where create_at= Now()  
+       2. extraire les employés ayant fait l'inscription le `3/10/2021`
+     rép2: select * from employee where create_at=`3/10/2021` 
+       3. extraire les employés ayant un email qui commence par `consonne` et qui a un chiffre avant le `@`
+    rép3: select * from employee where email='%[a-z][0_9]@'  
+       4. mettre first_name et last_name en `lowercase`
+    rép4: select lower(first_name), lower(last_name) from employee
+       5. modifier la column `create_at` par `date_creation`
+    rép5: ALTER TABLE employee CHANGE create_at date_creation datetime
+       6. c'est quoi la differnce entre `delete` et `truncate`: truncate supprime toutes les lignes d’une table et delete  permet de supprimer des lignes d’une table
+       7. imprimer la liste des employés qui ont un salaire plus que la somme de deux salaires minimum 
+    rép7: select * from employee where salaire 
+  
+    "| id | first_name | last_name   | email                          | salaire | create_at           |\n",
+    "|----|------------|-------------|--------------------------------|---------|---------------------|\n",
+    "|  1 | Cammy      | Yegorkin    | cyegorkin0@usatoday.com        |   10188 | 2021-10-27 08:04:27 |\n",
+    "|  2 | Shae       | Masham      | smasham1@ftc.gov               |   11601 | 2021-10-11 18:17:51 |\n",
+    "|  3 | Hadlee     | Oakeshott   | hoakeshott2@ca.gov             |    5797 | 2021-10-13 11:14:04 |\n",
+    "|  4 | Mora       | Krzyzowski  | mkrzyzowski3@usgs.gov          |    6665 | 2021-10-01 09:08:31 |\n",
+    "|  5 | Jone       | Ellerman    | jellerman4@xing.com            |    8018 | 2021-10-18 06:49:23 |\n",
+    "|  6 | Lynda      | Combe       | lcombe5@spotify.com            |    9423 | 2021-10-11 02:36:17 |\n",
+    "|  7 | Leon       | Brusin      | lbrusin6@barnesandnoble.com    |    8644 | 2021-10-17 21:10:01 |\n",
+    "|  8 | Dionysus   | Letford     | dletford7@simplemachines.org   |    9914 | 2021-10-17 10:45:06 |\n",
+    "|  9 | Edithe     | Radborn     | eradborn8@360.cn               |   12534 | 2021-10-15 00:55:30 |\n",
+    "| 10 | Darrelle   | Oxtiby      | doxtiby9@taobao.com            |   12483 | 2021-10-06 11:25:44 |\n",
+    "| 11 | Kori       | Gissing     | kgissinga@kickstarter.com      |    9001 | 2021-10-03 17:00:23 |\n",
+    "| 12 | Jordan     | Speedy      | jspeedyb@comsenz.com           |   10875 | 2021-10-19 07:36:37 |\n",
+    "| 13 | Toinette   | Bradneck    | tbradneckc@merriam-webster.com |   12670 | 2021-10-25 10:15:28 |\n",
+    "| 14 | Kissie     | Valentino   | kvalentinod@wikimedia.org      |    7285 | 2021-10-20 13:34:10 |\n",
+    "| 15 | Letta      | Botwood     | lbotwoode@shutterfly.com       |    6648 | 2021-10-04 06:49:30 |\n",
+    "| 16 | Claudetta  | Winram      | cwinramf@wsj.com               |   12494 | 2021-10-03 05:21:26 |\n",
+    "| 17 | Joell      | Force       | jforceg@examiner.com           |    6346 | 2021-10-13 22:57:31 |\n",
+    "| 18 | Sansone    | Comrie      | scomrieh@histats.com           |   11449 | 2021-10-26 15:04:28 |\n",
+    "| 19 | Cherie     | Salmen      | csalmeni@comsenz.com           |    9870 | 2021-10-19 16:36:11 |\n",
+    "| 20 | Hervey     | Mildmott    | hmildmottj@t-online.de         |    7783 | 2021-10-28 16:42:29 |\n",
+    "| 21 | Dar        | Vasin       | dvasink@mysql.com              |   10383 | 2021-10-29 15:56:34 |\n",
+    "| 22 | Dionis     | Riggulsford | driggulsfordl@pcworld.com      |    9191 | 2021-10-01 11:30:40 |\n",
+    "| 23 | Dory       | St Clair    | dstclairm@harvard.edu          |   10854 | 2021-10-10 14:42:25 |\n",
+    "| 24 | Ardeen     | Vardon      | avardonn@baidu.com             |   11460 | 2021-10-11 02:14:51 |\n",
+    "| 25 | Coriss     | Linnemann   | clinnemanno@fc2.com            |    9248 | 2021-10-24 17:15:02 |\n",
+    "| 26 | Itch       | Screech     | iscreechp@dedecms.com          |    5451 | 2021-10-21 15:28:28 |\n",
+    "| 27 | Ingram     | Thorneley   | ithorneleyq@freewebs.com       |   12764 | 2021-10-21 21:13:23 |\n",
+    "| 28 | Ellyn      | Deadman     | edeadmanr@w3.org               |    5630 | 2021-10-21 10:24:22 |\n",
+    "| 29 | Brigit     | Pinckney    | bpinckneys@parallels.com       |   10501 | 2021-10-26 02:34:22 |\n",
+    "| 30 | Gilbertina | Thurbon     | gthurbont@flavors.me           |    6167 | 2021-10-20 05:28:06 |\n"
+
+     Partie III
+    Pratique
+ 
